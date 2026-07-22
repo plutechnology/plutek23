@@ -1,0 +1,166 @@
+/*=========================================
+PRICING.CSS
+PLUTEK (PTY) LTD
+==========================================*/
+
+.calculator{
+    max-width:750px;
+    margin:50px auto;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:45px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
+}
+
+.calculator label{
+    display:block;
+    margin-bottom:10px;
+    margin-top:25px;
+    font-weight:600;
+    font-size:17px;
+    color:#ffffff;
+}
+
+.calculator input,
+.calculator select{
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.15);
+    background:#101b2d;
+    color:#ffffff;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.calculator input:focus,
+.calculator select:focus{
+    border-color:#00bfff;
+    box-shadow:0 0 15px rgba(0,191,255,.25);
+}
+
+.calculator button{
+    width:100%;
+    margin-top:35px;
+    padding:18px;
+    border:none;
+    border-radius:50px;
+    background:#0066ff;
+    color:#ffffff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.calculator button:hover{
+    background:#00bfff;
+    transform:translateY(-4px);
+    box-shadow:0 20px 35px rgba(0,191,255,.35);
+}
+
+.result{
+    margin-top:40px;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    background:#08111f;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.result h2{
+    font-size:48px;
+    color:#00bfff;
+    margin-top:15px;
+}
+
+.pricing-table{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:60px;
+}
+
+.package{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    transition:.4s;
+}
+
+.package:hover{
+    transform:translateY(-10px);
+    border-color:#00bfff;
+    box-shadow:0 20px 40px rgba(0,191,255,.2);
+}
+
+.package h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.package .price{
+    font-size:52px;
+    color:#00bfff;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.package ul{
+    list-style:none;
+    margin:30px 0;
+}
+
+.package ul li{
+    margin:15px 0;
+    color:#dddddd;
+}
+
+.package a{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    border-radius:40px;
+    background:#0066ff;
+    color:#ffffff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.package a:hover{
+    background:#00bfff;
+}
+
+.pricing-note{
+    max-width:900px;
+    margin:60px auto 0;
+    text-align:center;
+    color:#cccccc;
+    font-size:16px;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.calculator{
+    padding:30px;
+}
+
+.result h2{
+    font-size:36px;
+}
+
+.package{
+    padding:30px;
+}
+
+.package .price{
+    font-size:42px;
+}
+
+}
