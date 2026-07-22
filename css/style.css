@@ -267,15 +267,7 @@ header{
 
     letter-spacing:2px;
 
-}
 
-.nav-links{
-
-    display:flex;
-
-    gap:35px;
-
-}
 
 .nav-links a{
 
@@ -323,7 +315,6 @@ header{
 
 .quote-btn{
 
-    margin-left:50px;
 
     padding:13px 30px;
 
@@ -1012,24 +1003,13 @@ transform:translateY(-5px);
 
     position:absolute;
 
-    top:80px;
+    top:96px;
 
     left:0;
 
     width:100%;
 
-    background:#07101d;
-
-    flex-direction:column;
-
-    padding:30px 0;
-
-    gap:25px;
-
-    transform:translateY(-150%);
-
-    transition:.4s;
-
+    z-index:9999;
 }
 
 
