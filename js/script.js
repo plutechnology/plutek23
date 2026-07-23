@@ -26,8 +26,6 @@ const hamburger = document.querySelector(".hamburger");
 
 const navLinks = document.querySelector(".nav-links");
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
 
 
 if(hamburger){
@@ -249,24 +247,20 @@ WHATSAPP BUTTON PULSE
 
 const whatsapp = document.querySelector(".whatsapp");
 
+if(whatsapp){
+
 setInterval(function(){
 
     whatsapp.classList.toggle("pulse");
 
 },1000);
 
+}
+
 
 /*=========================
 BACK TO TOP BUTTON
 =========================*/
-
-const topButton = document.createElement("button");
-
-topButton.innerHTML = "↑";
-
-topButton.id = "topButton";
-
-document.body.appendChild(topButton);
 
 window.addEventListener("scroll", function(){
 
