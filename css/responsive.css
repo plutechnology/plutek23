@@ -96,3 +96,37 @@ MOBILE NAVIGATION
 
 
 }
+@media (max-width:768px){
+
+.navbar{
+
+    padding:15px 20px;
+
+}
+
+.nav-links{
+
+    display:none;
+
+}
+
+.hamburger{
+
+    display:flex;
+
+}
+
+.logo img{
+
+    width:45px;
+    height:45px;
+
+}
+
+.logo span{
+
+    font-size:22px;
+
+}
+
+}
