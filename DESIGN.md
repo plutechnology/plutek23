@@ -2,22 +2,25 @@
 
 ## Idea
 PluTek builds digital products from precise, well-made parts. The identity takes the
-pixel squares from the original logo and makes them the system: the hero assembles the
+pixel squares and colours from the original logo and makes them the system: the hero assembles the
 P-mark from squares that react to the visitor, and small square units recur as the only
 ornament. Everything else stays quiet so the work and the words carry the page.
 
 ## Colour
-| Token | Hex | Use |
-| --- | --- | --- |
-| `--ink` | `#0F1117` | Brand charcoal. Primary canvas, body text on light |
-| `--ink-raised` | `#171A23` | Raised surfaces on dark (frames, form panels) |
-| `--white` | `#FFFFFF` | Brand white. Text on dark, light sections |
-| `--mist` | `#F2F2F5` | Cool light grey for alternating light sections (never cream) |
-| `--violet` | `#7C3AED` | Brand purple. Primary buttons, focus ring, pixel accents. White text on it passes AA |
-| `--violet-soft` | `#B9A2F6` | Purple for text/links on charcoal (AA on `--ink`) |
+Taken from the PluTek logo and the original site, so the brand stays recognisable.
 
-Purple is used as a signal (action, focus, the mark), never as a background wash.
-One soft radial glow sits behind the hero mark; there are no other gradients.
+| Token | Hex | Source | Use |
+| --- | --- | --- | --- |
+| `--ink` | `#08111F` | Original site background | Primary canvas |
+| `--ink-raised` | `#0E1A2C` | Derived | Raised surfaces on dark (frames, panels) |
+| `--navy` | `#041C3F` | Logo navy | Text and headings on light sections, selected chips |
+| `--blue` | `#0766CE` | Logo royal blue | Primary buttons, CTA band, pixel accents. White text on it: 5.5:1 |
+| `--blue-deep` | `#0558B5` | Derived | Hover states, links on light (6.2:1) |
+| `--cyan` | `#00BFFF` | Original site accent | Links, focus ring and highlights on dark (8.9:1) |
+| `--mist` | `#F1F4F8` | Derived | Cool light sections |
+| `--white` | `#FFFFFF` | Brand | Text on dark, light sections |
+
+Blue is used as a signal (action, focus, the mark). One soft radial glow sits behind the hero mark; there are no other gradients.
 
 ## Type
 - **Inter Display** 500/600 for headings, set tight (-0.035em at display sizes).

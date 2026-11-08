@@ -13,9 +13,9 @@
   const ACCENTS = [ // [x, y, w, h, alpha] in the 32-unit mark grid
     [3, 6, 3.5, 3.5, 1], [0, 11, 2.5, 2.5, 0.6], [4.5, 12, 2, 2, 0.35],
   ];
-  const INK = [236, 237, 242];
-  const VIOLET = [124, 58, 237];
-  const VIOLET_SOFT = [185, 162, 246];
+  const INK = [236, 239, 244];
+  const ACCENT = [7, 102, 206];   // logo royal blue
+  const ACCENT_SOFT = [0, 191, 255]; // original-site cyan
 
   let w = 0, h = 0, dpr = 1, cell = 12, particles = [];
   let pointer = { x: -1e4, y: -1e4, active: false };
@@ -57,12 +57,12 @@
         const accent = g >= 128;
         let color, alpha;
         if (accent) {
-          color = VIOLET;
+          color = ACCENT;
           alpha = g > 230 ? 1 : g > 170 ? 0.65 : 0.4;
         } else {
-          // Mostly white, with a few violet squares so the mark reads as built from parts.
+          // Mostly white, with a few cyan squares so the mark reads as built from parts.
           const roll = Math.random();
-          color = roll < 0.06 ? VIOLET_SOFT : INK;
+          color = roll < 0.06 ? ACCENT_SOFT : INK;
           alpha = roll < 0.06 ? 0.95 : 0.78 + Math.random() * 0.22;
         }
         const start = old.length ? null : scatter(x, y);
