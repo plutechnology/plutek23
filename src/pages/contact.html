@@ -1,0 +1,104 @@
+<!--meta
+{
+  "title": "Contact PluTek — Email, WhatsApp and enquiries",
+  "description": "Contact PluTek in Johannesburg by email, WhatsApp or our enquiry form. Websites, e-commerce, software and IT support for South African businesses.",
+  "nav": "contact",
+  "priority": 0.9,
+  "scripts": ["forms"]
+}
+-->
+<section class="page-hero">
+  <div class="wrap page-hero__grid">
+    <h1>Contact</h1>
+    <p>A quick question, a quote or a problem to solve. Send a message, or reach us on WhatsApp during business hours.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap form-shell">
+    <div class="form-panel" data-form-panel>
+      <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-form data-success="contact-success" data-summary-label="message">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hp-field" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="form-step">
+          <h2 class="form-step__title">Send a message</h2>
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="m-name">Full name</label>
+              <input id="m-name" type="text" name="name" autocomplete="name" required aria-describedby="err-m-name" data-required="Enter your name.">
+              <p class="field__error" id="err-m-name" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="m-email">Email</label>
+              <input id="m-email" type="email" name="email" autocomplete="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-pattern="Enter an email address like name@company.co.za." aria-describedby="err-m-email" data-required="Enter your email so we can reply.">
+              <p class="field__error" id="err-m-email" role="alert"></p>
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="m-phone">Phone <span class="field__opt">(optional)</span></label>
+              <input id="m-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[+0-9 \(\)\-]{9,20}" aria-describedby="err-m-phone" data-pattern="Enter a phone number like 082 123 4567 or +27 82 123 4567.">
+              <p class="field__error" id="err-m-phone" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="m-subject">Subject <span class="field__opt">(optional)</span></label>
+              <input id="m-subject" type="text" name="subject" maxlength="120">
+            </div>
+          </div>
+          <div class="field">
+            <label for="m-message">Message</label>
+            <textarea id="m-message" name="message" rows="6" maxlength="1000" required aria-describedby="err-m-message" data-required="Write a short message."></textarea>
+            <span class="field__count" aria-hidden="true"></span>
+            <p class="field__error" id="err-m-message" role="alert"></p>
+          </div>
+          <div class="field">
+            <label class="check"><input type="checkbox" name="consent" value="yes" required data-required="Please agree so we can use your details to reply." aria-describedby="err-m-consent"><span>PluTek may use these details to respond to my message. See the <a href="/privacy.html">privacy notice</a>.</span></label>
+            <p class="field__error" id="err-m-consent" role="alert"></p>
+          </div>
+        </div>
+        <div class="form-actions">
+          <span class="form-actions__note">We reply by email.</span>
+          <button class="btn btn--primary" type="submit">Send message</button>
+        </div>
+        <div class="notice notice--error" data-form-error hidden tabindex="-1" role="alert">
+          <p class="notice__title">Your message didn't send</p>
+          <p>Check your connection and try again. If it keeps failing, message us on <a href="https://wa.me/27624930297" rel="noopener">WhatsApp</a> or call <a href="tel:+27658162875">065 816 2875</a>.</p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="form-aside">
+      <div>
+        <h2>Reach us directly</h2>
+        <ul class="contact-lines">
+          <li><span>WhatsApp</span><a href="https://wa.me/27624930297" rel="noopener">+27 62 493 0297</a></li>
+          <li><span>Phone</span><a href="tel:+27658162875">+27 65 816 2875</a></li>
+          <li><span>Phone</span><a href="tel:+27624930297">+27 62 493 0297</a></li>
+          <li><span>Location</span>Johannesburg, South Africa</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Business hours</h2>
+        <ul class="hours">
+          <li><span>Monday to Friday</span><span>08:00 – 17:00</span></li>
+          <li><span>Saturday</span><span>09:00 – 13:00</span></li>
+          <li><span>Sunday and public holidays</span><span>Closed</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Planning a project?</h2>
+        <p class="muted">The project form asks the right questions up front, so your first call is already useful.</p>
+        <p class="mt-1"><a class="link-arrow" href="/consultation.html">Start a project <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<template id="contact-success">
+  <div class="form-success" role="status">
+    <div class="form-success__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 12.5 10 17 19 7"/></svg></div>
+    <h2>Message sent<span data-first-name></span>.</h2>
+    <p>Thanks for getting in touch. We'll reply by email during business hours.</p>
+    <div class="btn-row"><a class="btn btn--primary" data-wa-summary href="https://wa.me/27624930297" rel="noopener">Also send on WhatsApp</a><a class="btn btn--quiet" href="/">Back to home</a></div>
+  </div>
+</template>

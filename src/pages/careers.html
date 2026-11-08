@@ -1,0 +1,122 @@
+<!--meta
+{
+  "title": "Careers — Join the PluTek talent network",
+  "description": "PluTek has no open roles right now. Join our talent network and we'll contact you when a role fits your skills in development, design, support or sales.",
+  "nav": "careers",
+  "priority": 0.5,
+  "scripts": ["forms"]
+}
+-->
+<section class="page-hero">
+  <div class="wrap page-hero__grid">
+    <h1>Careers</h1>
+    <p>We don't have open roles right now. As PluTek grows we'll hire, and we'll look at our talent network first.</p>
+  </div>
+</section>
+
+<section class="section section--light" aria-labelledby="who-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="who-title">Who we'd like to hear from</h2>
+      <p class="muted mt-1">Students, graduates and experienced people alike. Show us work you're proud of.</p>
+    </div>
+    <ul class="disciplines">
+      <li><h3>Front-end development</h3><p>HTML, CSS, JavaScript and responsive, accessible interfaces.</p></li>
+      <li><h3>Back-end development</h3><p>PHP, Node.js, Python, databases and APIs.</p></li>
+      <li><h3>Mobile development</h3><p>Android, iOS or cross-platform frameworks.</p></li>
+      <li><h3>UI and UX design</h3><p>Interface design, prototyping and user research.</p></li>
+      <li><h3>IT support and networking</h3><p>Troubleshooting, networks and end-user support.</p></li>
+      <li><h3>Sales and client relationships</h3><p>Business development for a growing tech company.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="join-title">
+  <div class="wrap form-shell">
+    <div class="form-panel" data-form-panel>
+      <form name="talent-network" method="POST" action="/thanks.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" data-form data-success="talent-success" data-summary-label="talent network application">
+        <input type="hidden" name="form-name" value="talent-network">
+        <p class="hp-field" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="form-step">
+          <h2 class="form-step__title" id="join-title">Join the talent network</h2>
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="t-name">Full name</label>
+              <input id="t-name" type="text" name="name" autocomplete="name" required aria-describedby="err-t-name" data-required="Enter your name.">
+              <p class="field__error" id="err-t-name" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="t-email">Email</label>
+              <input id="t-email" type="email" name="email" autocomplete="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-pattern="Enter an email address like name@company.co.za." aria-describedby="err-t-email" data-required="Enter your email.">
+              <p class="field__error" id="err-t-email" role="alert"></p>
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="t-phone">Phone <span class="field__opt">(optional)</span></label>
+              <input id="t-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[+0-9 \(\)\-]{9,20}" aria-describedby="err-t-phone" data-pattern="Enter a phone number like 082 123 4567 or +27 82 123 4567.">
+              <p class="field__error" id="err-t-phone" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="t-area">Area of work</label>
+              <select id="t-area" name="area" required aria-describedby="err-t-area" data-required="Choose the area closest to your skills.">
+                <option value="">Choose one</option>
+                <option>Front-end development</option>
+                <option>Back-end development</option>
+                <option>Mobile development</option>
+                <option>UI and UX design</option>
+                <option>IT support and networking</option>
+                <option>Sales and client relationships</option>
+                <option>Other</option>
+              </select>
+              <p class="field__error" id="err-t-area" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="t-link">Portfolio, GitHub or LinkedIn <span class="field__opt">(optional)</span></label>
+            <input id="t-link" type="url" name="link" placeholder="https://" aria-describedby="err-t-link">
+            <p class="field__error" id="err-t-link" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="t-cv">CV</label>
+            <input id="t-cv" type="file" name="cv" accept=".pdf,.doc,.docx" data-max-mb="5" required aria-describedby="t-cv-hint err-t-cv" data-required="Attach your CV.">
+            <p class="field__hint" id="t-cv-hint">PDF or Word, up to 5 MB.</p>
+            <p class="field__error" id="err-t-cv" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="t-note">A short note <span class="field__opt">(optional)</span></label>
+            <textarea id="t-note" name="note" rows="5" maxlength="1000" placeholder="What do you enjoy working on?"></textarea>
+            <span class="field__count" aria-hidden="true"></span>
+          </div>
+          <div class="field">
+            <label class="check"><input type="checkbox" name="consent" value="yes" required data-required="Please agree so we can keep your application on file." aria-describedby="err-t-consent"><span>PluTek may keep my CV and details for up to 12 months to consider me for roles, as described in the <a href="/privacy.html">privacy notice</a>. I can ask for them to be deleted at any time.</span></label>
+            <p class="field__error" id="err-t-consent" role="alert"></p>
+          </div>
+        </div>
+        <div class="form-actions">
+          <span class="form-actions__note">Only the founders see applications.</span>
+          <button class="btn btn--primary" type="submit">Join the network</button>
+        </div>
+        <div class="notice notice--error" data-form-error hidden tabindex="-1" role="alert">
+          <p class="notice__title">Your application didn't send</p>
+          <p>Check your connection and try again in a few minutes. If it keeps failing, message us on <a href="https://wa.me/27624930297" rel="noopener">WhatsApp</a>.</p>
+        </div>
+      </form>
+    </div>
+    <aside class="form-aside">
+      <div>
+        <h2>How we handle your CV</h2>
+        <p class="muted">Your CV is stored securely with our form provider and is only seen by the PluTek founders. We use it to contact you about suitable roles, never for anything else, and we delete it after 12 months or sooner if you ask.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<template id="talent-success">
+  <div class="form-success" role="status">
+    <div class="form-success__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 12.5 10 17 19 7"/></svg></div>
+    <h2>You're in the network<span data-first-name></span>.</h2>
+    <p>Thanks for your interest in PluTek. We'll be in touch when a role matches your skills.</p>
+    <div class="btn-row"><a class="btn btn--quiet" href="/about.html">Learn about PluTek</a></div>
+  </div>
+</template>
