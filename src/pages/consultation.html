@@ -1,0 +1,192 @@
+<!--meta
+{
+  "title": "Start a project — Book a consultation | PluTek",
+  "description": "Tell PluTek about your website, store or software project and book a free consultation call with the founders.",
+  "nav": "",
+  "priority": 0.9,
+  "scripts": ["forms"]
+}
+-->
+<section class="page-hero">
+  <div class="wrap page-hero__grid">
+    <h1>Start a project</h1>
+    <p>Three short steps. We'll use your answers to prepare for a consultation call, so the first conversation is already useful.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap form-shell">
+    <div class="form-panel" data-form-panel>
+      <form name="consultation" method="POST" action="/thanks.html" enctype="multipart/form-data"
+            data-netlify="true" netlify-honeypot="bot-field" data-form data-success="consult-success" data-summary-label="consultation request">
+        <input type="hidden" name="form-name" value="consultation">
+        <input type="hidden" name="topic" value="" data-prefill="topic">
+        <p class="hp-field" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+        <ol class="form-progress" data-progress aria-label="Form progress">
+          <li class="is-current">Your project</li>
+          <li>Meeting</li>
+          <li>Your details</li>
+        </ol>
+
+        <fieldset class="form-step" data-step="0">
+          <legend class="form-step__title">Your project</legend>
+
+          <fieldset class="field" data-prefill="service" data-prefill-group>
+            <legend class="field__label">What do you need help with?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="service" value="Website development" required data-required="Choose the service closest to what you need."><span>Website</span></label>
+              <label class="chip"><input type="radio" name="service" value="Online store"><span>Online store</span></label>
+              <label class="chip"><input type="radio" name="service" value="Software development"><span>Custom software</span></label>
+              <label class="chip"><input type="radio" name="service" value="Mobile applications"><span>Mobile app</span></label>
+              <label class="chip"><input type="radio" name="service" value="AI and automation"><span>AI and automation</span></label>
+              <label class="chip"><input type="radio" name="service" value="Branding and design"><span>Branding and design</span></label>
+              <label class="chip"><input type="radio" name="service" value="Digital marketing"><span>Digital marketing</span></label>
+              <label class="chip"><input type="radio" name="service" value="Hosting and maintenance"><span>Hosting and maintenance</span></label>
+              <label class="chip"><input type="radio" name="service" value="Cloud solutions"><span>Cloud</span></label>
+              <label class="chip"><input type="radio" name="service" value="Cybersecurity"><span>Cybersecurity</span></label>
+              <label class="chip"><input type="radio" name="service" value="IT support"><span>IT support</span></label>
+              <label class="chip"><input type="radio" name="service" value="Networking"><span>Networking</span></label>
+              <label class="chip"><input type="radio" name="service" value="IT consulting"><span>IT consulting</span></label>
+              <label class="chip"><input type="radio" name="service" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+            <p class="field__error" id="err-service" role="alert"></p>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend class="field__label">Rough budget <span class="field__opt">(optional)</span></legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="budget" value="Under R5 000"><span>Under R5 000</span></label>
+              <label class="chip"><input type="radio" name="budget" value="R5 000 – R20 000"><span>R5 000 – R20 000</span></label>
+              <label class="chip"><input type="radio" name="budget" value="R20 000 – R50 000"><span>R20 000 – R50 000</span></label>
+              <label class="chip"><input type="radio" name="budget" value="R50 000 – R100 000"><span>R50 000 – R100 000</span></label>
+              <label class="chip"><input type="radio" name="budget" value="Over R100 000"><span>Over R100 000</span></label>
+              <label class="chip"><input type="radio" name="budget" value="Not sure"><span>Not sure</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="c-description">Tell us about the project</label>
+            <p class="field__hint" id="c-description-hint">What does your business do, and what should this project change for it?</p>
+            <textarea id="c-description" name="description" rows="6" maxlength="1500" required aria-describedby="c-description-hint err-description" data-required="Add a sentence or two about the project."></textarea>
+            <span class="field__count" aria-hidden="true"></span>
+            <p class="field__error" id="err-description" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="c-file">Brief or requirements <span class="field__opt">(optional)</span></label>
+            <input id="c-file" type="file" name="attachment" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" data-max-mb="8" aria-describedby="c-file-hint err-file">
+            <p class="field__hint" id="c-file-hint">PDF, Word or image, up to 8 MB.</p>
+            <p class="field__error" id="err-file" role="alert"></p>
+          </div>
+
+          <div class="form-actions">
+            <span class="form-actions__note">Step 1 of 3</span>
+            <button class="btn btn--primary" type="button" data-next>Continue</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-step" data-step="1">
+          <legend class="form-step__title">Meeting</legend>
+
+          <fieldset class="field">
+            <legend class="field__label">How would you like to meet?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="meeting" value="Google Meet" checked><span>Google Meet</span></label>
+              <label class="chip"><input type="radio" name="meeting" value="Microsoft Teams"><span>Microsoft Teams</span></label>
+              <label class="chip"><input type="radio" name="meeting" value="Zoom"><span>Zoom</span></label>
+              <label class="chip"><input type="radio" name="meeting" value="Phone call"><span>Phone call</span></label>
+              <label class="chip"><input type="radio" name="meeting" value="In person"><span>In person</span></label>
+            </div>
+          </fieldset>
+
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="c-date">Preferred date <span class="field__opt">(optional)</span></label>
+              <input id="c-date" type="date" name="preferred-date" data-min-today aria-describedby="err-date">
+              <p class="field__error" id="err-date" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="c-time">Preferred time <span class="field__opt">(optional)</span></label>
+              <input id="c-time" type="time" name="preferred-time" min="08:00" max="17:00" step="900" aria-describedby="c-time-hint">
+              <p class="field__hint" id="c-time-hint">Weekdays, 08:00 to 17:00.</p>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--quiet" type="button" data-back>Back</button>
+            <button class="btn btn--primary" type="button" data-next>Continue</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-step" data-step="2">
+          <legend class="form-step__title">Your details</legend>
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="c-name">Full name</label>
+              <input id="c-name" type="text" name="name" autocomplete="name" required aria-describedby="err-name" data-required="Enter your name.">
+              <p class="field__error" id="err-name" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="c-company">Company <span class="field__opt">(optional)</span></label>
+              <input id="c-company" type="text" name="company" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="c-email">Email</label>
+              <input id="c-email" type="email" name="email" autocomplete="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-pattern="Enter an email address like name@company.co.za." aria-describedby="err-email" data-required="Enter your email so we can reply.">
+              <p class="field__error" id="err-email" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="c-phone">Phone or WhatsApp <span class="field__opt">(optional)</span></label>
+              <input id="c-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[+0-9 \(\)\-]{9,20}" aria-describedby="err-phone" data-pattern="Enter a phone number like 082 123 4567 or +27 82 123 4567.">
+              <p class="field__error" id="err-phone" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label class="check"><input type="checkbox" name="consent" value="yes" required data-required="Please agree so we can use your details to reply." aria-describedby="err-consent"><span>PluTek may use these details to respond to my request. See the <a href="/privacy.html">privacy notice</a>.</span></label>
+            <p class="field__error" id="err-consent" role="alert"></p>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--quiet" type="button" data-back>Back</button>
+            <button class="btn btn--primary" type="submit">Send request</button>
+          </div>
+          <div class="notice notice--error" data-form-error hidden tabindex="-1" role="alert">
+            <p class="notice__title">Your request didn't send</p>
+            <p>Check your connection and try again. If it keeps failing, email <a href="mailto:info@plutek.co.za">info@plutek.co.za</a> or message us on <a href="https://wa.me/27624930297" rel="noopener">WhatsApp</a>.</p>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <aside class="form-aside">
+      <div>
+        <h2>What happens next</h2>
+        <ol class="steps steps--compact">
+          <li class="step"><h3>We read your brief</h3><p>One of the founders reviews it and confirms a time to talk.</p></li>
+          <li class="step"><h3>We talk it through</h3><p>A free call to understand your goals, users and constraints.</p></li>
+          <li class="step"><h3>You get a scope and quote</h3><p>A written proposal with what we'll build, the timeline and the cost.</p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>Prefer to talk now?</h2>
+        <ul class="contact-lines">
+          <li><span>WhatsApp</span><a href="https://wa.me/27624930297" rel="noopener">+27 62 493 0297</a></li>
+          <li><span>Email</span><a href="mailto:info@plutek.co.za">info@plutek.co.za</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<template id="consult-success">
+  <div class="form-success" role="status">
+    <div class="form-success__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M5 12.5 10 17 19 7"/></svg></div>
+    <h2>Request sent<span data-first-name></span>.</h2>
+    <p>Thanks for the detail. We'll reply by email to confirm a time for your consultation call.</p>
+    <p>Want a faster answer? Send the same summary to us on WhatsApp.</p>
+    <div class="btn-row"><a class="btn btn--primary" data-wa-summary href="https://wa.me/27624930297" rel="noopener">Send on WhatsApp</a><a class="btn btn--quiet" href="/portfolio.html">See our work</a></div>
+  </div>
+</template>
