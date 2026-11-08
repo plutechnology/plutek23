@@ -255,6 +255,11 @@ html:not(.js) [data-next], html:not(.js) [data-back], html:not(.js) .form-action
 .type-panel__grid { position: absolute; inset: 0; background-image: linear-gradient(var(--ink-line) 1px, transparent 1px), linear-gradient(90deg, var(--ink-line) 1px, transparent 1px); background-size: 32px 32px; mask-image: linear-gradient(120deg, transparent 30%, #000 100%); -webkit-mask-image: linear-gradient(120deg, transparent 30%, #000 100%); opacity: 0.6; pointer-events: none; }
 .type-panel > :not(.type-panel__grid) { position: relative; }
 
+/* Demo feature (LivinIRIS) */
+.work-feature--demo { margin-bottom: clamp(3.5rem, 3rem + 3vw, 6rem); }
+.type-panel--iris { background: #0a0a0b; align-content: center; justify-items: start; gap: 1.5rem; }
+.type-panel__logo { width: min(52%, 280px); height: auto; }
+
 /* Demo list */
 .demo-list { display: grid; gap: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 @media (min-width: 760px) { .demo-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
