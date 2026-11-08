@@ -257,8 +257,7 @@ html:not(.js) [data-next], html:not(.js) [data-back], html:not(.js) .form-action
 
 /* Demo feature (LivinIRIS) */
 .work-feature--demo { margin-bottom: clamp(3.5rem, 3rem + 3vw, 6rem); }
-.type-panel--iris { background: #0a0a0b; align-content: center; justify-items: start; gap: 1.5rem; }
-.type-panel__logo { width: min(52%, 280px); height: auto; }
+.frame__view--iris { aspect-ratio: 1520 / 668; }
 
 /* Demo list */
 .demo-list { display: grid; gap: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
