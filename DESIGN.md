@@ -1,10 +1,10 @@
 # PluTek website — design system
 
 ## Idea
-PluTek builds digital products from precise, well-made parts. The identity takes the
-pixel squares and colours from the original logo and makes them the system: the hero assembles the
-P-mark from squares that react to the visitor, and small square units recur as the only
-ornament. Everything else stays quiet so the work and the words carry the page.
+PluTek builds digital products from precise, well-made parts. The identity is built on
+the PluTek TP logo: the header and footer use the official mark and wordmark, and the hero
+rebuilds the TP mark from squares that react to the visitor, with the logo's pixel cluster in
+royal blue. Small square units recur as the only ornament. Everything else stays quiet so the work and the words carry the page.
 
 ## Colour
 Taken from the PluTek logo and the original site, so the brand stays recognisable.
@@ -39,6 +39,11 @@ Blue is used as a signal (action, focus, the mark). One soft radial glow sits be
 - One orchestrated moment: the hero mark assembling on load. Pointer/touch scatters nearby squares.
 - Everything else moves only in answer to the visitor (menu, accordions, form steps, hover on links).
 - `prefers-reduced-motion`: the mark renders assembled and still; transitions are removed.
+
+## Logo files
+`src/assets/img/logo-{1,2,3}x.png` (horizontal lockup, white, 153×36 at 1x), `mark-560.png` (white mark,
+sampled by the hero), favicons in `src/static/`. All cut from the official logo artwork; replace with
+SVG exports when available.
 
 ## Components
 `button` (primary violet / quiet outline) · `link-arrow` · `frame` (browser frame for screenshots or video) ·
